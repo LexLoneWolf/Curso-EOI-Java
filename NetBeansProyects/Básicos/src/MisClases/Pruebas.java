@@ -15,7 +15,7 @@ public class Pruebas {
     
     public static void main(String[] args) {
         
-        Matemáticas ma = new Matemáticas();
+        Matematicas ma = new Matematicas();
         
         Scanner sc = new Scanner (System.in);
         
