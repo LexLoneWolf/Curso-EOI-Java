@@ -25,6 +25,7 @@ public class Ejercicio13 {
             A = sc.nextInt();
         
         F = (D+M+A);
+        
         cifra1 = F/1000;
         cifra2 = F/100%10;
         cifra3 = F/10%10;

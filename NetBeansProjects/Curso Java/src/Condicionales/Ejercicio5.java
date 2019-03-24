@@ -34,6 +34,8 @@ public class Ejercicio5 {
            else
                 System.out.println("Ninguno es una letra min�scula");
         }
+        
+        
 		
 	
         

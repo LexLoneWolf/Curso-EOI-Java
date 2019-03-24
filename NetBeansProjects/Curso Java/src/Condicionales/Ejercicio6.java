@@ -20,6 +20,10 @@ public class Ejercicio6 {
         System.out.println("Introduce un carácter");
         C = (char)System.in.read();
         
+        if (C<=0 && C>=9) {
+            
+        }
+        
         
     }
 }
