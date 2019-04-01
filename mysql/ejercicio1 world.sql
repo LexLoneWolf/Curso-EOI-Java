@@ -1,0 +1,1 @@
+select sum(population) as total,countrycode from world.city group by countrycode order by total desc;
