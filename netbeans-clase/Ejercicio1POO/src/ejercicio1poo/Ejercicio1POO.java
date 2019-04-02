@@ -13,13 +13,14 @@ import java.util.Scanner;
  */
 public class Ejercicio1POO {
 
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner (System.in);
         String nombre, numero;
         double tipo, importe;//se crea objeto cuenta1 sin parámetros
 //se ejecuta el constructor por defecto
@@ -43,30 +44,18 @@ public class Ejercicio1POO {
 //se ejecuta el constructor copia
         Cuenta cuenta3 = new Cuenta(cuenta1);
 //mostrar los datos de cuenta1
-        System.out.println("Datos de la cuenta 1");
-        System.out.println("Nombre del titular: " + cuenta1.getNombre());
-        System.out.println("Número de cuenta: " + cuenta1.getNumeroCuenta());
-        System.out.println("Tipo de interés: " + cuenta1.getTipoInteres());
-        System.out.println("Saldo: " + cuenta1.getSaldo());
-        System.out.println();
+        
+        System.out.println(cuenta1.toString());
 //se realiza un ingreso en cuenta1
         cuenta1.ingreso(4000);
 //mostrar el saldo de cuenta1 después del ingreso
         System.out.println("Saldo: " + cuenta1.getSaldo());
 //mostrar los datos de cuenta2
-        System.out.println("Datos de la cuenta 2");
-        System.out.println("Nombre del titular: " + cuenta2.getNombre());
-        System.out.println("Número de cuenta: " + cuenta2.getNumeroCuenta());
-        System.out.println("Tipo de interés: " + cuenta2.getTipoInteres());
-        System.out.println("Saldo: " + cuenta2.getSaldo());
-        System.out.println();
+        
+        System.out.println(cuenta2.toString());
 //mostrar los datos de cuenta3
-        System.out.println("Datos de la cuenta 3");
-        System.out.println("Nombre del titular: " + cuenta3.getNombre());
-        System.out.println("Número de cuenta: " + cuenta3.getNumeroCuenta());
-        System.out.println("Tipo de interés: " + cuenta3.getTipoInteres());
-        System.out.println("Saldo: " + cuenta3.getSaldo());
-        System.out.println();
+        
+        System.out.println(cuenta3.toString());
 //realizar una transferencia de 10€ desde cuenta3 a cuenta2
         cuenta3.transferencia(cuenta2, 10);
 //mostrar el saldo de cuenta2
@@ -78,5 +67,7 @@ public class Ejercicio1POO {
         System.out.println();
 
     }
+    
+ 
 
 }
